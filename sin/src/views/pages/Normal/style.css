@@ -2,10 +2,14 @@
   box-sizing: border-box;
 }
 
+#score {
+  color: #fff;
+  background-color: coral;
+}
+
 #table {
   display: flex;
   flex-wrap: wrap;
-  background-color: skyblue;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 12px;
@@ -24,7 +28,9 @@
 
   /* 裏の場合のカードのスタイル */
   color: rgba(0, 0, 0, 0);
-  background-image: url(https://picsum.photos/60/90);
+  background-image: url("../../../img/back.png");
+  background-size: 80px;
+  background-position: center;
 }
 
 /* カードにマウスを乗せたときのスタイル */
@@ -47,4 +53,10 @@
 .matching.disappear {
   opacity: 0;
   pointer-events: none; /* マウスに関するイベントを効かないようにする */
+}
+
+.setting {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }

@@ -4,12 +4,25 @@ import main from "../../../utils/main";
 //style
 import "./style.css";
 
+//components
+import Startbutton from "../../components/atoms/Startbutton";
+import Header from "../../components/atoms/Header";
+import Backbutton from "../../components/atoms/Backbutton";
+
+
 const Normalpage = () => {
-  window.onload = main();
+  main();
   return (
-    <div>
+    <div
+      className="poker"
+    >
+      <Header />
+      <div className="setting">
+        <Startbutton />
+        <div id="score">揃えた回数：　０</div>
+      </div>
       <div id="table"></div>
-      <div id="score">揃えた回数：　０</div>
+      <Backbutton />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-export default (yugioh) =>　{
+export default () =>　{
 const suits = ["♠", "♣", "♥", "◆"];
 const trump = [];
 
@@ -75,3 +75,4 @@ const openCards = [];
 /* 揃ったペアの数を保存する変数 */
 let pairCount = 0;
 }
+

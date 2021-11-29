@@ -12,8 +12,8 @@ import Backbutton from "../../components/atoms/Backbutton";
 const Alone = () => {
   const history = useNavigate();
 
-  const Rank = () => {
-    history("/Rank");
+  const TimeAttack = () => {
+    history("/TimeAttack");
   }
 
   const Normal = () => {
@@ -28,7 +28,7 @@ const Alone = () => {
     <div
       className="people"
     >
-      <AloneButton>タイムアタックモード</AloneButton>
+      <AloneButton onClick={TimeAttack}>タイムアタックモード</AloneButton>
       <AloneButton onClick={Normal}>ノーマルモード</AloneButton>
     </div>
     <div 
