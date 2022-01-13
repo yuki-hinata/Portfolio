@@ -2,7 +2,7 @@ import React from "react";
 import main from "../../../utils/main";
 
 
-//components
+//componentsだよ
 import Startbutton from "../../components/atoms/Startbutton";
 import StopWatch from "../../../utils/Time";
 
